@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jpDnfVr/jvpbQ3WNgZXjRpiZPNQD2g7wWCJnf0VIDNzGqUxqMLAzbxf36IQUHzkA++x+jtxm6r+G3q3H4p5nHQ==",
+  "dgSpecHash": "YVPan1Ml6W88yC47g7B9dgEi9Ss39PTgCKJcf4HjzWb8lqsnBVsp7IGkWLv0HhEQREPZOH0MlIAJXyq9bPyM+g==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\222\\202304275437\\api\\api.Service\\api.Service.csproj",
+  "projectFilePath": "D:\\Projects\\Microsoft\\API\\dotnet_service\\Application.API\\SacralAI.Code.Scheduler\\bin\\Debug\\Apps\\1\\222\\202304283458\\api\\api.Service\\api.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

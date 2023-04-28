@@ -1,37 +1,32 @@
-﻿namespace Api.Services
+﻿namespace Api.Service
 {
-    public class RetailersService : IRetailersService
+    public class RetailersService
     {
-        private readonly IRetailersRepository _retailersRepository;
+        private readonly RetailerRepository _repository;
 
-        public RetailersService(IRetailersRepository retailersRepository)
+        public RetailersService(RetailerRepository repository)
         {
-            _retailersRepository = retailersRepository;
+            _repository = repository;
         }
 
-        public async Task<IEnumerable<RetailerModel>> GetAllRetailersAsync()
+        public async Task<int> CreateRetailerAsync(RetailerModel retailer)
         {
-            return await _retailersRepository.GetAllRetailersAsync();
+            return await _repository.CreateAsync(retailer);
         }
 
-        public async Task<RetailerModel> GetRetailerByIdAsync(int id)
+        public async Task<RetailerModel> ReadRetailerAsync(int id)
         {
-            return await _retailersRepository.GetRetailerByIdAsync(id);
+            return await _repository.ReadAsync(id);
         }
 
-        public async Task<int> CreateRetailerAsync(RetailerModel model)
+        public async Task<bool> UpdateRetailerAsync(RetailerModel retailer)
         {
-            return await _retailersRepository.CreateRetailerAsync(model);
+            return await _repository.UpdateAsync(retailer);
         }
 
-        public async Task<int> UpdateRetailerAsync(RetailerModel model)
+        public async Task<bool> DeleteRetailerAsync(int id)
         {
-            return await _retailersRepository.UpdateRetailerAsync(model);
-        }
-
-        public async Task<int> DeleteRetailerAsync(int id)
-        {
-            return await _retailersRepository.DeleteRetailerAsync(id);
+            return await _repository.DeleteAsync(id);
         }
     }
 }

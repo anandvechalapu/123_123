@@ -1,13 +1,12 @@
-﻿namespace Api.Services
-{
-    using Api.DTO;
+﻿using Api.DTO;
 
+namespace Api.Service
+{
     public interface IRetailersService
     {
-        Task<IEnumerable<RetailerModel>> GetAllRetailersAsync();
-        Task<RetailerModel> GetRetailerByIdAsync(int id);
-        Task<int> CreateRetailerAsync(RetailerModel model);
-        Task<int> UpdateRetailerAsync(RetailerModel model);
-        Task<int> DeleteRetailerAsync(int id);
+        Task<int> CreateRetailerAsync(RetailerModel retailer);
+        Task<RetailerModel> ReadRetailerAsync(int id);
+        Task<bool> UpdateRetailerAsync(RetailerModel retailer);
+        Task<bool> DeleteRetailerAsync(int id);
     }
 }
